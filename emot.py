@@ -17,64 +17,75 @@ def main():
   f= open('content.txt', 'rU')
   for line in f:
     match = re.findall(r':[)]', line)
-    clines=clines+1
     for mat in match:
       chappy=chappy+1
+      clines=clines+1
          
     match = re.findall(r':[(]', line)
     #clines=clines+1
     for mat in match:
       csad=csad+1
+      clines=clines+1
       
     match = re.findall(r';[)]', line)
     #clines=#clines+1
     for mat in match:
       csarca=csarca+1
+      clines=clines+1
                
     match = re.findall(r':D', line)
     #clines=#clines+1
     for mat in match:
       chappy=chappy+1
+      clines=clines+1
              
     match = re.findall(r':P', line)
     #clines=#clines+1
     for mat in match:
       csarca=csarca+1
+      clines=clines+1
                
     match = re.findall(r'O[_]O', line)
     #clines=#clines+1
     for mat in match:
       csurp=csurp+1
+      clines=clines+1
                
     match = re.findall(r':[-]o.', line)
     #clines=#clines+1
     for mat in match:
       csurp=csurp+1
+      clines=clines+1
               
     match = re.findall(r':[-][/]', line)
     #clines=#clines+1
     for mat in match:
       cneutral=cneutral+1
+      clines=clines+1
                
     match = re.findall(r'=[_]=', line)
     #clines=#clines+1
     for mat in match:
       cneutral=cneutral+1
+      clines=clines+1
            
     match = re.findall(r'B[-][)]', line)
     #clines=#clines+1
     for mat in match:
       ccrook=ccrook+1
+      clines=clines+1
                
     match = re.findall(r'>[_]<', line)
     #clines=#clines+1
     for mat in match:
       cangry=cangry+1
-               
+      clines=clines+1         
+      
     match = re.findall(r'X[-][(]', line)
     #clines=#clines+1
     for mat in match:
       cangry=cangry+1
+      clines=clines+1
       
   p={}
   p['Happy'] = (chappy/clines) * 100
